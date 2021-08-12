@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.CarFragment"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"></androidx.recyclerview.widget.RecyclerView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/rv_check"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="全选"></CheckBox>
+        <Button
+            android:id="@+id/and"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结算"
+            android:layout_toRightOf="@+id/rv_check"
+            android:layout_marginLeft="120dp"
+            android:layout_centerInParent="true"></Button>
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="合计：元"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"></TextView>
+    </RelativeLayout>
+</LinearLayout>
